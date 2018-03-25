@@ -37,13 +37,13 @@ then
  if [ ! -f /tmp/CheckUser/EdwardHome ]
  then
   touch /tmp/CheckUser/EdwardHome
-  curl "https://graph-eu01-euwest1.api.smartthings.com/api/smartapps/installations/<AppID>/Phone/home?access_token=<Access Token>" -k
+  curl -X POST "http://192.168.2.3/apps/api/391/home?access_token=fa7a7129-0382-4f53-8085-bf659f9f5226"
  fi
 else
  if [ -f /tmp/CheckUser/EdwardHome ]
  then
   rm -f /tmp/CheckUser/EdwardHome
-  curl "https://graph-eu01-euwest1.api.smartthings.com/api/smartapps/installations/<AppID>/Phone/away?access_token=<Access Token>" -k
+  curl -X POST "http://192.168.2.3/apps/api/391/away?access_token=fa7a7129-0382-4f53-8085-bf659f9f5226"
   fi
 fi
 
@@ -52,13 +52,13 @@ then
  if [ ! -f /tmp/CheckUser/MeganHome ]
  then
   touch /tmp/CheckUser/MeganHome
-  curl "https://graph-eu01-euwest1.api.smartthings.com/api/smartapps/installations/<AppID>/Phone/home?access_token=<Access Token>" -k
+  curl -X POST "http://192.168.2.3/apps/api/391/home?access_token=fa7a7129-0382-4f53-8085-bf659f9f5226"
  fi
 else
  if [ -f /tmp/CheckUser/MeganHome ]
  then
   rm -f /tmp/CheckUser/MeganHome
-  curl "https://graph-eu01-euwest1.api.smartthings.com/api/smartapps/installations/<AppID>/Phone/away?access_token=<Access Token>" -k
+  curl -X POST "http://192.168.2.3/apps/api/391/home?access_token=fa7a7129-0382-4f53-8085-bf659f9f5226"
  fi
 fi
 
